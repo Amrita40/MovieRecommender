@@ -20,7 +20,7 @@ def help(m):
         query_index = search.loc[search['title']==m].index[0]
         distances, indices = model.kneighbors(pivot.iloc[query_index,:].values.reshape(1, -1), n_neighbors = 11)
         l = []
-        for i in range(0, len(distances.flatten())):
+        for i in range(1, len(distances.flatten())):
             l.append(pivot.index[indices.flatten()[i]])
         return l
         
