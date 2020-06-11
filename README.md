@@ -7,6 +7,8 @@
  The dataset has been preprocessed and the model is built using NearestNeighbors unsupervised algorithm.
  
  The model is deployed using flask. Following is the link to the deployment:
+ https://movierecommender-123.herokuapp.com/
+ 
  
  
  
